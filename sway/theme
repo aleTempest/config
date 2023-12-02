@@ -1,0 +1,18 @@
+# wm
+default_border pixel 2
+for_window [class=".*"] border pixel 2
+default_floating_border none
+smart_gaps on
+hide_edge_borders smart
+gaps inner 10
+gaps outer 5
+
+# Wallpaper
+output * bg /home/ale/Pictures/w/65204496_p0.png fill
+
+# Property Name             Border  BG      Text    Indicator Child-border
+client.focused              #d79921 #d79921  #d79921  #d79921    #d79921
+client.focused_inactive     #504945 #282828 #a89984 #928374   #504945
+client.unfocused            #504945 #282828 #a89984 #928374   #504945
+client.urgent               #cc241d #cc241d  #cc241d  #cc241d    #504945
+client.placeholder          #504945 #282828 #a89984 #928374   #504945

@@ -1,0 +1,20 @@
+
+for_window [class="PacketTracer"] floating enable
+
+output HDMI-A-1 resolution 1920x1080 position 0,0
+output eDP-1 resolution 1366x768 position 1920 350
+
+set $alt Mod1
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term kitty
+set $menu rofi -show
+
+include ./input
+include ./theme
+include ./bindings
+
+exec_always ~/.config/waybar/launch.sh
