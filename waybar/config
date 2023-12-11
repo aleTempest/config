@@ -1,0 +1,56 @@
+{
+  "layer": "top",
+  "modules-left": ["sway/workspaces", "sway/mode"],
+  "modules-center": ["sway/window"],
+  "modules-right": ["network", "pulseaudio", "sway/language", "battery", "clock", "tray"],
+  "sway/window": {
+      "max-length": 50
+  },
+  "battery": {
+      "format": "{icon}",
+      "format-icons": [" ", " ", " ", " ", " "],
+      "tooltip-format": "{capacity}% - {timeTo}"
+  },
+  "clock": {
+      "format": "{:%a, %d. %b  %H:%M}  "
+  },
+  "network": {
+    "format-wifi": " ",
+    "format-disconnected": "✕",
+    "format-ethernet": " ",
+    "tooltip-format": "{ifname} via {gwaddr}  ",
+    "tooltip-format-wifi": "{essid} ({signalStrength}%)  ",
+    "tooltip-format-ethernet": "{ifname}  ",
+    "tooltip-format-disconnected": "Disconnected"
+  },
+  "sway/language": {
+    "format": "{}",
+    "on-click": "swaymsg input type:keyboard xkb_switch_layout next"
+  },
+  "sway/mode": {
+    "format": "{}"
+  },
+  "pulseaudio": {
+    "format": "{volume}%   {icon}",
+    "format-bluetooth": "{volume}%   {icon} ",
+    "format-muted": "Muted    ",
+    "format-icons": {
+        "headphone": " ",
+        "hands-free": " ",
+        "headset": " ",
+        "phone": " ",
+        "portable": " ",
+        "car": "",
+        "default": [" ", " "]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "on-click-middle": "amixer set Master toggle",
+    "tooltip": false
+  },
+  "tray": {
+	"icon-size": 21,
+	"spacing": 5,
+	"show-passive-items": true,
+  }
+}

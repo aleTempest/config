@@ -8,10 +8,12 @@ gaps inner 10
 gaps outer 5
 
 # Wallpaper
-output * bg /home/ale/Pictures/w/65204496_p0.png fill
+# output * bg /home/ale/Pictures/w/65204496_p0.png fill
+# output * bg /home/ale/Pictures/w/gruvbox-wall/minimalistic/gruvbox_astro.jpg fill
+output * bg #282828 solid_color
 
 # Property Name             Border  BG      Text    Indicator Child-border
-client.focused              #d79921 #d79921  #d79921  #d79921    #d79921
+client.focused              #2aa198 #2aa198  #2aa198 #2aa198    #2aa198
 client.focused_inactive     #504945 #282828 #a89984 #928374   #504945
 client.unfocused            #504945 #282828 #a89984 #928374   #504945
 client.urgent               #cc241d #cc241d  #cc241d  #cc241d    #504945
